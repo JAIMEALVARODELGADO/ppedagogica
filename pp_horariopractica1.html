@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>        
+        <meta charset="UTF-8"/>
+        <meta description="Registro y cotrol de las prácticas pedagógicas de la Universidad de Nariño"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="fonts/style.css">
+        <title>Prácticas Pedag&oacute;gicas</title>
+    </head>
+<body>
+
+<header>
+    <h3>Pr&aacute;cticas Pedag&oacute;gicas</h3>
+    <figure></figure>    
+</header>
+<nav>
+    <ul class="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Creación</a>
+            <ul>
+                <li><a href="pp_estudiante1.html">Estudiante</a></li>
+                <li><a href="#">Practica</a></li>
+                <li><a href="#">Evaluación</a></li>
+                <!--<li><a href="#">Submenu 4</a>
+                    <ul>
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                        <li><a href="#">Submenu 4</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+        </li>
+        <li><a href="#">Administración</a>
+            <ul>
+                <li><a href="#">Horarios</a></li>
+                <li><a href="#">Programas</a></li>
+                <li><a href="#">Departamentos</a></li>
+                <li><a href="#">Facultades</a></li>
+                <!--<li><a href="#">Vinculación</a></li>-->
+                <li><a href="#">Instituciones</a></li>
+                <li><a href="#">Aspectos</a></li>
+                
+            </ul>
+        </li>
+        <li><a href="#">Contacto</a></li>        
+    </ul>
+</nav>
+<div class="caja1">
+    <h4>Práctica</h4>
+    <a href="#"><span class="icon-add-user"></span> Nuevo</a>
+    <a href="#"><span class="icon-magnifying-glass"></span> Buscar</a>
+    <a href="#"><span class="icon-calendar"></span> Horario</a>
+    <a href="index.html"><span class="icon-log-out"></span> Salir</a>
+</div>
+    <form method="post" action="pp_estudiante11.php">
+    <!--<div class="caja2">-->   
+         <div class="fila">
+        <span class="etiqueta"><label for="numero_iden">Identificación:</label></span>
+        <span class="form-el"><input type='text' id='numero_iden' name='numero_iden' maxlength='20' size='20' required=''/></span>
+        <span class="etiqueta"><label>Nombre:</label></span>
+        <span class="form-el"><label class="labelmostrar">Ana Maribel Castro Fernandez</label></span>
+        </div>
+        <div class="fila">
+        <span class="etiqueta"><label>Direccion:</label></span>
+        <span class="form-el"><label class="labelmostrar">Calle 28a No 18-37 Barrio del Sur</label></span>
+        <span class="etiqueta"><label>Teléfono:</label></span>
+        <span class="form-el"><label class="labelmostrar">78837736</label></span>
+        </div>
+        <div class="fila">
+        <span class="etiqueta"><label>Correo Electrónico:</label></span>
+        <span class="form-el"><label class="labelmostrar">AnaMaribelCastroFernandez@gmail.com</label></span>
+        </div>
+        
+        <fieldset><legend>Información de la Práctica</legend>
+        <div class="fila">
+        <span class="etiqueta"><label>Practica:</label></span>
+        <span class="form-el"><label class="labelmostrar">I</label></span>
+        <span class="etiqueta"><label>Programa:</label></span>
+        <span class="form-el"><label class="labelmostrar">Programa I</label></span>
+        </div>
+        <div class="fila">
+        <span class="etiqueta"><label>Semestre:</label></span>
+        <span class="form-el"><label class="labelmostrar">10</label></span>
+        <span class="etiqueta"><label>Nombra del Acompañante:</label></span>
+        <span class="form-el"><label class="labelmostrar">Jorge Cardenas</label></span>
+        </div>
+        </fieldset>
+        
+        <fieldset><legend>Horario</legend>
+        <table>
+            <th colspan="2">Opciones</th>
+            <th>Día</th>
+            <th>Hora</th>
+            <th>Asignatura</th>
+            <th>Grado</th>
+            <th>Grupo</th>
+            <th>Jornada</th>
+            <th>Nivel</th>
+            <th><span class="icon-save"></span></th>
+            <tr>
+                <td width="5%"><a href="#" title="Editar" class="btnhref"><span class="icon-edit"></span></a></td>
+                <td width="5%"><a href="#" title="Eliminar" class="btnhref"><span class="icon-trash Eliminar"></span></a></td>
+                <td><select name='id_asignatura' >
+                    <option value=''></option>
+                    <option value='1'>Lunes</option>
+                    <option value='1'>Martes</option>
+                    <option value='1'>Miercoles</option>
+                    </select>
+                </td>
+                <td><input type="text" name="hora" size="8" maxlength="8"></td>
+                <td>
+                    <select name='id_asignatura' >
+                    <option value=''></option>
+                    <option value='1'>Ciencias Naturales</option>
+                    <option value='1'>Matemática</option>
+                    <option value='1'>Quimica</option>
+                    </select>
+                </td>
+                <td>
+                    <select name='grado' >
+                    <option value=''></option>
+                    <option value='01'>01</option>
+                    <option value='02'>02</option>
+                    <option value='03'>03</option>
+                    <option value='04'>04</option>
+                    <option value='05'>05</option>
+                    <option value='06'>06</option>
+                    <option value='07'>07</option>
+                    <option value='08'>08</option>
+                    <option value='09'>09</option>
+                    <option value='10'>10</option>
+                    <option value='11'>11</option>
+                    </select>
+                </td>
+                <td><input type="text" name="grupo" size="2" maxlength="2"></td>
+                <td>
+                    <select name='jornada' >
+                    <option value=''></option>
+                    <option value='Mañana'>Mañana</option>
+                    <option value='Tarde'>Tarde</option>
+                    </select>
+                </td>
+                <td>
+                    <select name='nivel' >
+                    <option value=''></option>
+                    <option value='Basica primaria'>Basica Primaria</option>
+                    <option value='Basica secundaria'>Basica Secundaria</option>
+                    <option value='Media Vocacional'>Media Vocacional</option> 
+                    </select>
+                </td>
+                <td width="5%"><a href="#" title="Guardar" class="btnhref"><span class="icon-save"></span></a></td>
+            </tr>
+            <tr>
+                <td width="5%" colspan="2"><a href="#" title="Nuevo" class="btnhref"><span class="icon-add-to-list"></span></a></td>
+                <td><select name='id_asignatura' >
+                    <option value=''></option>
+                    <option value='1'>Lunes</option>
+                    <option value='1'>Martes</option>
+                    <option value='1'>Miercoles</option>
+                    </select>
+                </td>
+                <td><input type="text" name="hora" size="8" maxlength="8"></td>
+                <td>
+                    <select name='id_asignatura' >
+                    <option value=''></option>
+                    <option value='1'>Ciencias Naturales</option>
+                    <option value='1'>Matemática</option>
+                    <option value='1'>Quimica</option>
+                    </select>
+                </td>
+                <td>
+                    <select name='grado' >
+                    <option value=''></option>
+                    <option value='01'>01</option>
+                    <option value='02'>02</option>
+                    <option value='03'>03</option>
+                    <option value='04'>04</option>
+                    <option value='05'>05</option>
+                    <option value='06'>06</option>
+                    <option value='07'>07</option>
+                    <option value='08'>08</option>
+                    <option value='09'>09</option>
+                    <option value='10'>10</option>
+                    <option value='11'>11</option>
+                    </select>
+                </td>
+                <td><input type="text" name="grupo" size="2" maxlength="2"></td>
+                <td>
+                    <select name='jornada' >
+                    <option value=''></option>
+                    <option value='Mañana'>Mañana</option>
+                    <option value='Tarde'>Tarde</option>
+                    </select>
+                </td>
+                <td>
+                    <select name='nivel' >
+                    <option value=''></option>
+                    <option value='Basica primaria'>Basica Primaria</option>
+                    <option value='Basica secundaria'>Basica Secundaria</option>
+                    <option value='Media Vocacional'>Media Vocacional</option> 
+                    </select>
+                </td>
+                <td width="5%"><a href="#" title="Guardar" class="btnhref"><span class="icon-save"></span></a></td>
+            </tr>
+        </table>
+        </fieldset>
+    <!--</div>-->
+</form>
+</body>
+</html>
